@@ -28,4 +28,24 @@ $( document ).ready( function() {
             }
         });
     });
+    $( '.js-phone' ).hover(
+        function() {
+            if ( win_width >= 1024 ) {
+                $( this ).parent().addClass( 'top-left' );
+            }
+        },
+        function() {
+            $( this ).parent().removeClass( 'top-left' );
+        }
+    )
+    $( '.js-email' ).hover(
+        function() {
+            if ( win_width >= 1024 ) {
+                $( this ).parent().addClass( 'bottom-right' );
+            }
+        },
+        function() {
+            $( this ).parent().removeClass( 'bottom-right' );
+        }
+    )
 });
