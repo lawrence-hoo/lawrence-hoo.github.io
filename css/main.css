@@ -84,6 +84,25 @@ ul {
         -o-transform: none;
         transform: none;
     }
+    .gray-indent-stick {
+        position: absolute;
+        display: block;
+        width: 25px;
+        height: 25px;
+        top: -30px;
+        left: 9px;
+        z-index: 99;
+    }
+    .gray-indent-stick::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 5px;
+        height: 25px;
+        background-color: #D8D8D8;
+    }
+    .gray-indent-stick::before,
     .gray-indent-plus::after,
     .is-open .gray-indent-plus::after {
         top: 5px;
@@ -479,6 +498,7 @@ h4, h5, h6 {
     body {
         -webkit-print-color-adjust: exact;
     }
+    .gray-indent-stick,
     .gray-indent-plus {
         display: none;
     }
